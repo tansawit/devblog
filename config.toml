@@ -1,55 +1,64 @@
-baseURL = "https://devnotes.tansawit.me"
+baseurl = "https://notes.tansawit.me"
+languageCode = "en"
 title = "tansawit's devnotes"
-theme = "hugo-notepadium"
-copyright = "©2020 Sawit Trisirisatayawong."
-
+theme = "kiss"
+copyright = "&copy; <a href=\"https://github.com/ribice\">Sawit Trisirisatayawong</a> 2020"
+disqusShortname = "shortname"
+googleAnalytics = ""
+Paginate = 5 # Number of posts per page
 enableRobotsTXT = true
 
-# Enable Disqus
-#disqusShortname = "XXX"
+[params.rss] # Adding this tag enables RSS feed
+includeContent = true # Includes whole content in rss
+authorName = "Sawit Trisirisatayawong" # Author full name
+authorEmail = "sawit.tr@gmail.com" # Author email
 
-# Google Analytics
-#googleAnalytics = "UA-123-45"
+[params.assets]
+customCSS = ["css/custom.css"]
 
-[markup.highlight]
-codeFences = true
-noClasses = false
+[params.info]
+adsense = "" # Adsense ID (ID only, without ca-pub-)
+enableSocial = true # Adds OpenGraph and Twitter cards
+homeTitle = "" # Title for home page
+poweredby = true # Adds powered by hugo and kiss below Copyright
+related = true # Includes related articles at the bottom of the article
+codeCopy = true # Add copy button above code blocks
+taxonomiesCount = true # Add taxonomies count
 
-[markup.goldmark.renderer]
-unsafe = true  # enable raw HTML in Markdown
+[params.features]
+disqusOnDemand = true  # Load Disqus comments on click
 
-[params]
-style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
-dateFormat = "Monday, January 2, 2006"  # if unset, default is "2006-01-02"
-logo = ""  # if you have a logo png
-keywords = ["software", "engineer","developer","personal","website","notes","learning"]
-slogan = "notes on the things I've learned"
-license = ""  # CC License
-fullRss = false # Puts entire HTML post into rss 'description' tag. If unset, default is false.
 
-[params.comments]
-enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
+[params.opengraph.facebook]
+admins = [] # array of Facebook IDs
+appID = ""
+pageID = ""
 
-[params.math]
-enable = false  # optional: true, false. Enable globally, default: false. You can always enable math on per page.
-use = "katex"  # option: "katex", "mathjax". default: "katex"
+[params.opengraph.twitter]
+page = "" # Twitter Page username. If not set, params.social.twitter will be used.
 
-[params.syntax]
-use = "prismjs"  # builtin: "prismjs", "hljs". "none" means Chroma
-theme = "xcode"
-darkTheme = "xcode-dark"  # apply this theme in dark mode
+[params.social]
+twitter = "tansawit"
+github = "tansawit"
+email = "sawit.tr@gmail.com"
+linkedin = "tansawit"
+# facebook = "ribice"
+instagram = ""
+codepen = ""
+rss = "index.xml" # Add this to show RSS button in social.
 
-[params.share]
-enable = false
-addThisId = ""
-inlineToolId = ""
+[params.social.config]
+platforms = ["github","facebook","twitter","linkedin","instagram","email","codepen"]
 
-[params.nav]
-showCategories = true       # /categories/
-showTags = true             # /tags/
+[params.matomoAnalytics]
+siteID = 1
+rootURL = "//matomo.example.com/"
 
-# custom navigation items
+[params.fathomAnalytics]
+rootURL = "//fathom.example.com/"
 
-[[params.nav.custom]]
-title = "Main Site"
-url = "https://tansawit.me"
+[taxonomies]
+tag ="tags"
+
+[blackfriday]
+hrefTargetBlank = true
