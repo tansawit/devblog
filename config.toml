@@ -1,4 +1,4 @@
-baseurl = "https://notes.tansawit.me"
+baseurl = "https://devnotes.tansawit.me"
 languageCode = "en"
 title = "tansawit's devnotes"
 theme = "kiss"
