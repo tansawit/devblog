@@ -1,6 +1,6 @@
 baseurl = "https://notes.tansawit.me"
 languageCode = "en"
-title = "tansawit's (dev)notes"
+title = "tansawit's note log"
 theme = "kiss"
 copyright = "&copy; <a href=\"https://github.com/ribice\">Sawit Trisirisatayawong</a> 2020"
 disqusShortname = "shortname"
